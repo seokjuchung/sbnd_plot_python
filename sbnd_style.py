@@ -27,16 +27,16 @@ OKABE_ITO_RED_PURPLE = (0.80, 0.60, 0.70)
 OKABE_ITO_BLACK = (0.0, 0.0, 0.0)
 
 # This ordering gets the SBND logo colors in the first 4 and delays yellow.
-# SBND_COLOR_CYCLE = [
-#     OKABE_ITO_BLACK,
-#     OKABE_ITO_VERMILION,
-#     OKABE_ITO_SKY_BLUE,
-#     OKABE_ITO_ORANGE,
-#     OKABE_ITO_BLUE_GREEN,
-#     OKABE_ITO_RED_PURPLE,
-#     OKABE_ITO_BLUE,
-#     OKABE_ITO_YELLOW
-# ]
+OKABE_ITO_COLOR_CYCLE = [
+    OKABE_ITO_BLACK,
+    OKABE_ITO_VERMILION,
+    OKABE_ITO_SKY_BLUE,
+    OKABE_ITO_ORANGE,
+    OKABE_ITO_BLUE_GREEN,
+    OKABE_ITO_RED_PURPLE,
+    OKABE_ITO_BLUE,
+    OKABE_ITO_YELLOW
+]
 
 SBND_COLOR_CYCLE = [
     OKABE_ITO_VERMILION,
@@ -151,7 +151,7 @@ def set_sbnd_style():
         "axes.labelweight": "normal",
         "axes.edgecolor": "black",
         "axes.linewidth": 2,
-        "axes.prop_cycle": cycler(color=SBND_COLOR_CYCLE),
+        "axes.prop_cycle": cycler(color=OKABE_ITO_COLOR_CYCLE),
         "axes.titlelocation": "center",
 
         # Ticks
